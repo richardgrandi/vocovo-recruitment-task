@@ -17,7 +17,7 @@ This codebase contains a skeletal microservices-style API for registering IoT ap
 
 1. Write unit tests to ensure all the routes you've created operate as expected
 1. Modify the `docker-compose.yml` file to run both the `auth` and `appliances` services at the same time
-1. Ensure that the `appliances` service can't create or update new todo items without the user being authenticated.
+1. Ensure that users of the `appliances` service can't create or update appliances without the user being authenticated.
 1. Make suitable changes to both the `auth` and `appliances` codebases so that the main listening port of each service could be more easily changed in future, without needing modifications to any javascript
 1. Make any other improvements or refactorings you deem necessary to bring this codebase up to good standards of quality, dryness, DX etc
 
