@@ -21,8 +21,9 @@ This codebase contains a skeletal microservices-style API for registering IoT ap
 1. Make suitable changes to both the `auth` and `appliances` codebases so that the main listening port of each service could be more easily changed in future, without needing modifications to any javascript
 1. Make any other improvements or refactorings you deem necessary to bring this codebase up to good standards of quality, dryness, DX etc
 
-## General notes
+## Scope
 
+- We don't need to see a fully working database - simulating one is perfectly fine
 - You are **not** expected complete all of this, please try to accomplish as much as you can in the time you have.
 - Please consider code quality, structure, reusability and git practices
 - You should install any NPM or Linux packages you need
