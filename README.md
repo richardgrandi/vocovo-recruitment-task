@@ -29,6 +29,6 @@ You are free to do the following tasks either in your own time before the interv
 
 ## Scope
 
-- You are **not** expected complete all of this, please try to accomplish as much as you can in the time you have.
+- You are **not** expected to complete all of the tasks either in your own time or in the interview. 
 - Please consider code quality, security, structure, reusability and git practices
 - You should install any packages you need
