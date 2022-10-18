@@ -19,7 +19,7 @@ You are free to do the following tasks either in your own time before the interv
 1. Modify the `docker-compose.yml` file to run both the `auth` and `appliances` services at the same time
 1. Ensure that users of the `appliances` service can't create or update appliances without the user being authenticated.
 1. Make suitable changes to both the `auth` and `appliances` codebases so that the main listening port of each service could be more easily changed in future, without needing modifications to any javascript
-1. Make any other improvements or refactorings you deem necessary to bring this codebase up to good standards of quality, dryness, DX etc
+1. Make any other improvements or refactorings you deem necessary to bring this codebase up to good standards of quality, security, dryness, DX etc
 
 ### Front end
 
