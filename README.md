@@ -13,7 +13,7 @@ This codebase contains a skeletal, microservices-like app for registering IoT ap
 
 ## Installation
 
-Check out this repo, then run the following in the `client`, `api/appliances` and `api/auth` folders:
+Check out this repo, then run the following in the `client` and `api/appliances` folders:
 
 ```bash
 npm i
@@ -36,6 +36,6 @@ Please submit a PR to this repo which includes your solutions.
 1. Style the `<ApplianceList>` with CSS to give it appropriate information architecture and clarity
 1. Add sorting to any part of the list of appliances.
 
-1. Ensure that users of the `appliances` service can't create or update appliances without the user being authenticated using the `auth` service.
+1. Start the `auth` service and ensure that users of the `appliances` service can't create or update appliances without the user being authenticated using the `auth` service.
 
 1. Modify the `docker-compose.yml` file to run both the `auth` and `appliances` services at the same time, removing the need to run `npm run start` for the `api` services individually.
