@@ -1,7 +1,4 @@
-const randomChar = () => {
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-  return characters.charAt(Math.floor(Math.random() * characters.length))
-}
+import crypto from 'crypto'
 
 function randomDate(start: Date, end: Date) {
   return new Date(
@@ -9,12 +6,15 @@ function randomDate(start: Date, end: Date) {
   )
 }
 
+const types = ['Set top box', 'Lightbulb', 'Smoke detector']
+
 const appliances = []
 
-for (let i = 0; i < 30; i++) {
+for (let i = 0; i < 100; i++) {
   appliances.push({
     id: i,
-    name: `${randomChar()} Appliance`,
+    name: `Appliance ${crypto.randomBytes(2).toString('hex')}`,
+    type: types[Math.floor(Math.random() * types.length)],
     createdAt: randomDate(new Date(2022, 0, 1), new Date(2022, 0, 30)),
   })
 }
