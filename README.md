@@ -5,7 +5,7 @@ This codebase contains a skeletal, microservices-like app for registering IoT ap
 ## Scope
 
 - You should attempt to complete as much as you can in **no more than 2 hours**.
-- 100% completion is **not** a requirement (but how much you complete and to what quality, matters).
+- 100% completion is **not** a requirement (but how much you complete and to what quality, will be evaluated).
 - Your solution should be runnable by our staff, when reviewing your work
 - Your solutions should consider all engineering practices e.g security, structure, maintainability etc.
 - You can install any packages you need
