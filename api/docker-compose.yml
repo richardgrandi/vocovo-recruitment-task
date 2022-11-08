@@ -12,6 +12,26 @@ services:
       - ./appliances/src:/home/app/src
     command: npm run start
 
+  auth:
+    build: ./auth
+    container_name: auth
+    ports:
+     - 3000:3000
+    volumes: 
+     - ./auth/src:/home/app/src
+    command: npm run start
+
+  client:
+    container_name: client
+    volumes:
+     - ../client/src:/home/app/src
+    build:
+      context: ../client
+      dockerfile: ../client/Dockerfile
+    ports:
+     - 3006:3000
+    command: npm run start
+
   nginx:
     build: ./nginx
     container_name: nginx
