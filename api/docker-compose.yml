@@ -16,7 +16,7 @@ services:
     build: ./auth
     container_name: auth
     ports:
-     - 3000:3000
+     - 3006:3000
     volumes: 
      - ./auth/src:/home/app/src
     command: npm run start
@@ -29,8 +29,10 @@ services:
       context: ../client
       dockerfile: ../client/Dockerfile
     ports:
-     - 3006:3000
+     - 3000:3000
     command: npm run start
+    depends_on:
+     - appliances
 
   nginx:
     build: ./nginx
