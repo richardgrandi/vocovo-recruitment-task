@@ -1,5 +1,12 @@
 import crypto from 'crypto'
 
+export interface Appliance {
+  id: number;
+  name: string;
+  type: string;
+  createdAt: Date;
+}
+
 function randomDate(start: Date, end: Date) {
   return new Date(
     start.getTime() + Math.random() * (end.getTime() - start.getTime())
@@ -19,4 +26,4 @@ for (let i = 0; i < 100; i++) {
   })
 }
 
-export default appliances
+export default appliances as Appliance[];
