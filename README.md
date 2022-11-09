@@ -2,6 +2,17 @@
 
 This codebase contains a skeletal, microservices-like app for registering IoT appliances (e.g set top boxes, smart bulbs) with a database. There is a "front end" (a blank Create React App in the `client` directory), and a "back end" (a rudimentary Node app in the `api` directory).
 
+# Developer notes
+I have amended the docker setup so that it will run all three applications. If you navigate to `/api` and run `docker compose up`, it should build and spin up the Appliances API on [localhost:8081](http://localhost:8081), the auth api on [localhost:3006](http://localhost:3006) and the front end client on [localhost:3000](http://localhost:3000).
+
+This included writing a Dockerfile for the client subdirectory.
+
+I did not complete all of the tasks, notably missing out on sorting the appliances (I assumed some simple ES6 sorting on the front end would be fine, but didn't get around to it) and writing unit tests.
+
+The front-end is very barebones, but given this role's focus on backend, I tried to focus as much of my time as possible on that aspect of the work. One frustrating thing I spent some time trying to solve was that our 'data' would always refresh so it wasn't pleasant to delete and amend the data contained within, so I used the NodeCache package to cache it for five minutes.
+
+In all, I spent closer to 2.5 hours of focused time on this.
+
 ## Scope
 
 - You should attempt to complete as much as you can in **no more than 2 hours**.
